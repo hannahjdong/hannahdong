@@ -1,0 +1,47 @@
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ml-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}
+
+.card-title {
+           position: absolute;
+           bottom: 20px;
+           left: 20px;
+           text-align: left;
+         }
+.view:hover {
+-webkit-filter: brightness(150%);
+transition: all .4s ease-in-out;
+}
+
+.view {
+transition: all .4s ease-in-out;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.link-articles
+{
+    border-bottom: solid 1px blue;
+    text-decoration: none;
+}
+
+.link-articles:hover
+{
+    border-bottom-color: red;
+}
