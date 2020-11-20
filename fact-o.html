@@ -31,6 +31,7 @@
 
     <!-- Nav Bar -->
     <div class="container">
+      <div id="top">
       <nav class="navbar navbar-expand-lg navbar-light shadow-none">
         <a class="navbar-brand" href="index.html">
           <img src="icon.png" width="50" height="50" alt="logo">
@@ -45,6 +46,7 @@
           </div>
         </div>
       </nav>
+    </div>
     </div>
 
   </head>
@@ -62,23 +64,31 @@
 
 
       <div class="row mt-4">
-          <figure class="col">
-            <a href="fact1.png" data-size="1600x1067">
-              <img alt="first screen of fact-o website" src="fact1.png" class="img-fluid"/>
-            </a>
+          <figure class="col ml-4">
+              <img alt="first screen of fact-o website" src="img/fact1.png" class="img-fluid"/>
           </figure>
       </div>
 
       <div class="row">
-          <figure class="col">
+          <figure class="col ml-4">
             <h2>
               Fact-O
             </h2>
             <p>
               <em> Building mental resilience during a global pandemic</em>
             </p>
+            <p>
+              <strong> Year:</strong> 2020
+            </p>
+            <p>
+              <strong> Skills:</strong> UX/UI Desgin, User Research, Prototyping
+            </p>
+            <p>
+              <strong> Tools Used:</strong> Balsamiq, Sketch, Adobe Photoshop, HTML/CSS, Bootstrap
+            </p>
+
           </figure>
-          <div class = "col">
+          <div class = "col ml-4 mb-5 mt-5">
             <p>
                <a class="link-articles" href="http://cs.wellesley.edu/~fact_o/Fact-o/">Fact-O</a>
                was created last semester in my Human Computer Interaction course. In today's day and age,
@@ -90,6 +100,102 @@
             </p>
           </div>
       </div>
+
+      <div class="row">
+          <figure class="col ml-4">
+            <h2>
+              User Interviews
+            </h2>
+            <p>
+              <em> The Problems</em>
+            </p>
+          </figure>
+      </div>
+      <div class="row mt-4">
+          <figure class="col ml-4">
+              <img alt="user problems" src="img/problems.png" class="img-fluid"/>
+          </figure>
+      </div>
+
+      <div class="row">
+          <figure class="col ml-4">
+            <h2>
+              Personas
+            </h2>
+            <p>
+              <em> Mike and Jenny </em>
+            </p>
+          </figure>
+      </div>
+      <div class="row mt-4">
+          <figure class="col ml-4">
+            <a href="img/persona1.png" data-size="1600x1067">
+              <img alt="persona 1" src="img/persona1.png" class="img-fluid"/>
+            </a>
+          </figure>
+          <figure class="col ml-4">
+            <a href="img/persona2.png" data-size="1600x1067">
+              <img alt="persona 2" src="img/persona2.png" class="img-fluid"/>
+            </a>
+          </figure>
+      </div>
+
+      <div class="row">
+          <figure class="col ml-4 mt-4">
+            <h2>
+              Prototyping
+            </h2>
+            <p>
+              <em> Interactive Prototyping </em>
+            </p>
+          </figure>
+      </div>
+      <div class="row">
+            <div class="col ml-4 mt-4">
+              <video height="700" width="360" controls>
+                <source src="img/wireframe1.mp4" type="video/mp4" />
+              </video>
+            </div>
+
+            <div class="col mt-4">
+              <video height="700" width="360" controls>
+                <source src="img/final1.mp4" type="video/mp4" />
+              </video>
+            </div>
+      </div>
+
+            <div class="row">
+                <figure class="col ml-4 mt-4">
+                  <h2>
+                    Final Design Rationale
+                  </h2>
+                </figure>
+            </div>
+            <div class="row justify-content-md-center" data-aos="fade-right">
+                <div class="google-slides-container">
+                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTI2-2ux6RAL7K9i0t_uUogPJkinSbwH4DCAnR1opR6lleYvHYqPQneHcw9jQqz99Pkrx6wvxyiPAzt/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+            </div>
+
+            <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-xs-12 mb-4">
+                <div class="text-center">
+                  <a href="http://cs.wellesley.edu/~fact_o/Fact-o/">
+                    <button type="submit" class="btn btn-outline-secondary waves-effect">Website</button>
+                  </a>
+                  <a href="https://projects.invisionapp.com/share/NQZ0XJAP6FE#/screens/434028298">
+                    <button type="submit" class="btn btn-outline-secondary waves-effect">Prototype</button>
+                  </a>
+                  <a href="#top" class="text-white">
+                    <button type="submit" class="btn btn-outline-secondary waves-effect">Back to Top</button>
+                  </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
   </div>
 
 <script>
@@ -121,6 +227,18 @@
   sr.reveal('.navbar', {
     duration: 2000,
     origin:'top',
+    distance:'150px'
+  });
+  window.sr = ScrollReveal();
+  sr.reveal('video', {
+    duration: 2000,
+    origin:'bottom',
+    distance:'150px'
+  });
+  window.sr = ScrollReveal();
+  sr.reveal('iframe', {
+    duration: 2000,
+    origin:'bottom',
     distance:'150px'
   });
 </script>
