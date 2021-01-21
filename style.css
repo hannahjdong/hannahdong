@@ -1,47 +1,116 @@
-
 .mt-0 {
   margin-top: 20px !important;
 }
 
 .ml-1 {
-  margin-left: ($spacer * .25) !important;
+  margin-left: (spacer * 0.25) !important;
 }
 
 .px-2 {
-  padding-left: ($spacer * .5) !important;
-  padding-right: ($spacer * .5) !important;
+  padding-left: (spacer * 0.5) !important;
+  padding-right: (spacer * 0.5) !important;
 }
 
 .p-3 {
-  padding: $spacer !important;
+  padding: spacer !important;
 }
 
 .card-title {
-           position: absolute;
-           bottom: 20px;
-           left: 20px;
-           text-align: left;
-         }
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+}
 .view:hover {
--webkit-filter: brightness(150%);
-transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .view {
-transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.wow {
-  visibility: hidden;
+.nav-link {
+  font-size: 1.8em !important;
+  font-family: "Avenir", Helvetica, sans-serif;
 }
 
-.link-articles
-{
-    border-bottom: solid 1px blue;
-    text-decoration: none;
+.link-articles {
+  border-bottom: solid 1px blue;
+  text-decoration: none;
 }
 
-.link-articles:hover
-{
-    border-bottom-color: red;
+.link-articles:hover {
+  border-bottom-color: red;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.bounce-arrow {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+}
+.bounce-arrow:hover span {
+  animation: bounce 2s ease infinite;
+}
+span {
+  font-size: 48px;
+  display: inline-block;
+  width: 100%;
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  55%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-20px);
+  }
+  65% {
+    transform: translateY(-10px);
+  }
+  85% {
+    transform: translateY(-5px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Avenir.woff") format("woff"),
+    url("../fonts/Avenir.ttf") format("truetype"),
+    url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Avenir", Helvetica, sans-serif;
 }
