@@ -114,3 +114,9 @@ h2,
 h3 {
   font-family: "Avenir", Helvetica, sans-serif;
 }
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
