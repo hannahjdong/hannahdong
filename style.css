@@ -153,6 +153,9 @@ mark {
     flex-direction: column;
     margin-right: 0px;
   }
+  .navbar-toggler-icon {
+    font-size: 2em;
+  }
 }
 
 /*  Medium devices (tablets, 768px and up) */
