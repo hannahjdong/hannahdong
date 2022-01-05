@@ -18,17 +18,42 @@ body {
 h1 {
   margin: 0px;
   font-size: 60px;
+  font-weight: 400;
 }
 
 h2 {
   margin: 0px;
   font-size: 30px;
   display: flex;
+  font-weight: 100;
 }
 
 h3 {
   margin: 0px;
   font-size: 25px;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h5 {
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+}
+
+h6 {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+}
+
+h7 {
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
 }
 
 h1,
@@ -52,7 +77,6 @@ h3,
 }
 
 .col {
-  flex: 50%;
   justify-content: center;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -318,27 +342,17 @@ nav {
 
 .footer {
   margin-top: 5vh;
+  margin-bottom: 2vh;
   text-align: center;
 }
 
 .copyrights {
   color: rgb(202, 202, 202);
+  padding: 0px;
 }
 
 #work {
   margin-top: 5vh;
-}
-
-.play-text {
-  text-align: center;
-  margin-top: 5vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
-}
-
-.play-h1 {
-  font-size: 45px;
-  margin-bottom: 2vh;
 }
 
 .about-row {
@@ -366,7 +380,7 @@ nav {
 }
 
 .about-text {
-  padding: 70px 0;
+  padding: 10px 0;
 }
 
 p {
@@ -494,7 +508,19 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
+}
+
+.project-img-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+.margin-row {
+  margin-left: 18vw;
+  margin-right: 18vw;
 }
 
 .project-col {
@@ -509,61 +535,21 @@ p {
   font-weight: bold;
 }
 
-h4 {
-  padding: 10px;
-  margin: 10px;
-  font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
-  text-align: center;
-}
-
-.project-h2 {
-  font-weight: bold;
-  font-family: "Barlow", sans-serif;
-  font-size: 30px;
-}
-
 .project-head {
   display: flex;
   justify-content: left;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 5vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-left: 17vw;
+  margin-right: 17vw;
   padding: 10px;
   align-items: center;
-}
-
-h5 {
-  padding: 10px;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 100;
 }
 
 .project-img {
   width: 75%;
 }
 
-h6 {
-  font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-}
-
-h7 {
-  font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-}
-
-h8 {
-  font-size: 20px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 200;
-}
 .project-img-mobile {
   display: none;
   width: 80%;
@@ -602,8 +588,8 @@ ul li {
 .project-row-no {
   display: flex;
   justify-content: left;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-left: 17vw;
+  margin-right: 17vw;
   padding-left: 10px;
   padding-right: 10px;
   align-items: center;
